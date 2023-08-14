@@ -10,3 +10,62 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+#input{
+
+border: 0.5px solid white;
+text-decoration: none;
+
+}
+
+
+#caja_p{
+
+    box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+#diva{
+    margin-top: 10px;
+    width: 98%;
+    height: 3px;
+    background: rgb(249, 248, 248);
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+#divb{
+    margin-top: 10px;
+    width: 97%;
+    height: 3px;
+    background: rgb(249, 248, 248);
+ 
+ 
+
+
+}
+
+#divi{
+    display: flex;
+    height: 20px;
+    background: white;
+    font-size: 10px;
+    margin: 10px;
+    padding: 3px;
+    border: 0.5px solid rgb(205, 205, 205);
+}
+
+
+.momia{
+
+    opacity: 20%;
+
+}
+
+.momia:hover{
+
+    opacity: 100%;
+    color: red;
+   
+}
