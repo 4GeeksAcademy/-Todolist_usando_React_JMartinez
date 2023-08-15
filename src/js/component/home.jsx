@@ -6,6 +6,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
 	const Style = { width: "100%" }
 	const Style2 = { width: "30%" }
+
 	const [array, setArray] = useState('');
 	const [list, setList] = useState([]);
 
@@ -88,14 +89,17 @@ const Home = () => {
 		try {
 			const resa = await
 				fetch('https://playground.4geeks.com/apis/fake/todos/user/Jorge', {
-					method: "POST",
+					method: "PUT",
 					body: JSON.stringify(list),
 					headers: {
 						"Content-Type": "application/json"
 					},
-					const moto = await resa.json()
+
 
 				})
+
+			const data = await resa.json()
+			console.log(data);
 
 		} catch (error) {
 
@@ -107,8 +111,13 @@ const Home = () => {
 	useEffect(function () {
 		CRUS()
 		obtenerInfo()
-		actualizar()
+
 	}, [])
+
+
+	useEffect(function () {
+		actualizar()
+	}, [list])
 
 
 	return (
