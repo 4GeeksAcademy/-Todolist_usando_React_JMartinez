@@ -14,7 +14,7 @@ const Home = () => {
 	const detectKeyDown = (event) => {
 
 		if (event.key === "Enter" && array !== "") {
-			setList(list.concat({ label: array }));
+			setList(list.concat({ label: array, done: true }));
 			setArray("")
 
 		}
@@ -33,8 +33,9 @@ const Home = () => {
 		})
 
 		setList(array2)
-
+	
 	}
+
 
 	async function CRUS() {
 		try {
@@ -117,6 +118,7 @@ const Home = () => {
 
 	useEffect(function () {
 		actualizar()
+
 	}, [list])
 
 
